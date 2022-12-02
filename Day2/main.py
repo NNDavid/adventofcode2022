@@ -16,10 +16,3 @@ toPlay = {('A', 'X') : 'Z', ('A', 'Y') : 'X', ('A', 'Z') : 'Y', ('B', 'X') : 'X'
 
 result2 = sum([strategy[game[1]] + playPoint[toPlay[(game[0], game[1])]] for game in games])
 print(f"Part 2: {result2}")
-
-
-
-
-
-
-
