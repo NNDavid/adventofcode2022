@@ -48,8 +48,5 @@ for i in range(len(grid)):
             if grid[i][k] >= height:
                 break
         scores.append(left * right * top * bottom)
-        print(f"{i} {j} top = {top} bottom = {bottom} left = {left} right = {right}")
-
-print(scores)
 
 print(f"Second solution {max(scores)}")
