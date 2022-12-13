@@ -4,9 +4,9 @@ def compare(fst, snd):
     if isinstance(fst, int) and isinstance(snd, int):
         return 0 if fst == snd else (-1 if fst < snd else 1)
     elif isinstance(fst, int) and not isinstance(snd, int):
-        return compare(list([fst]), snd)
+        return compare([fst], snd)
     elif not isinstance(fst, int) and isinstance(snd, int):
-        return compare(fst, list([snd]))
+        return compare(fst, [snd])
     else:
         for f, s in zip(fst, snd):
             result = compare(f, s)
